@@ -1,9 +1,6 @@
 <h1 align="center">Hi there, I'm Pavel 👋</h1>
 <h3 align="center">Developer from Russia</h3>
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=spv-asina&label=Profile+Views&color=blueviolet&style=flat" alt="profile views">
-</p>
 
 ---
 
