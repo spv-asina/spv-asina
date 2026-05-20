@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=F7F7F7&background=6D28D9&center=true&vCenter=true&random=false&width=500&lines=Hey%2C+I'm+spv-asina;ML+Developer+%26+Programmer;Python+%26+C%2B%2B" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=F7F7F7&background=9333EA&center=true&vCenter=true&random=false&width=500&lines=Hey%2C+I'm+Pavel;ML+Developer+%26+Programmer;Python+%26+C%2B%2B" alt="Typing SVG" />
   </a>
 </div>
 
@@ -12,7 +12,7 @@
 
 <p align="center">
   <a href="https://t.me/spv_asina">
-    <img src="https://img.shields.io/badge/Telegram-6D28D9?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram">
+    <img src="https://img.shields.io/badge/Telegram-9333EA?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram">
   </a>
 </p>
 
