@@ -7,34 +7,50 @@
 <br>
 
 <p align="center">
-  <b>Machine Learning Developer & Programmer</b>
+  Machine Learning & Backend Developer
 </p>
 
-<p align="center">
-  <a href="https://t.me/spv_asina">
-    <img src="https://img.shields.io/badge/Telegram-9333EA?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram">
-  </a>
-</p>
+---
 
-<br>
+## About Me
 
-<p align="center">
-  Tech Stack
-</p>
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" />
-  <img src="https://img.shields.io/badge/Machine%20Learning-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
-  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" />
-  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
-  <img src="https://img.shields.io/badge/FAISS-FF6F00?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-</p>
+ML & Backend developer from SPbPU, Russia.
+Building RAG systems, working with computer vision, writing backend in Python/FastAPI.
+Interested in production ML, MLOps, and LLM applications.
 
-<br>
+---
 
+## Projects
+
+### Work
+
+TBD
+
+### University
+
+| Project | Description | Stack |
+|---------|-------------|-------|
+| [RAG](https://github.com/spv-asina/RAG-theory-graphs) | RAG pipeline with knowledge graph integration for grounded LLM inference | Python, FastAPI, PostgreSQL, LangChain, FAISS |
+| [TSP](https://github.com/spv-asina/TSP) | Travelling salesman problem -- exact and heuristic algorithm implementations | C++, Python |
+
+---
+
+## Tech Stack
+
+**ML / Data:**
+Python, PyTorch, OpenCV, scikit-learn, FAISS, TensorFlow
+
+**Backend:**
+FastAPI, Flask, PostgreSQL, Docker, Git
+
+---
+
+## GitHub Stats
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=spv-asina&layout=compact&theme=dark)
+
+---
+
+## Contact
+
+[![Telegram](https://img.shields.io/badge/Telegram-9333EA?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/spv_asina)
