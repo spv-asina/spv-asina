@@ -26,17 +26,17 @@ Interested in production ML, MLOps, and LLM applications.
 
 | Project | Description | Stack |
 |---------|-------------|-------|
-| MFE | TBD | TBD |
-| MGD | TBD | TBD |
-| PLA | TBD | TBD |
-| ME | TBD | TBD |
+| MFE | Crypto price direction forecasting with technical indicators and ML | Python, Flask, scikit-learn, Binance API, Redis |
+| MGD | YouTube video summarizer -- download, transcribe (Whisper), frame analysis, summary generation | Python, Whisper, RuT5, OpenCV, Gradio |
+| PLA | Event aggregator platform -- Telegram bot with multi-source parsing and LLM enrichment | Python, Aiogram, SQLAlchemy, PostgreSQL, LLM |
+| ME | Construction estimate analyzer -- Telegram bot with price parsing, ML predictions, PDF reports | Python, Aiogram, ML, Parsers, PDF generation |
 
 ### University
 
 | Project | Description | Stack |
 |---------|-------------|-------|
-| [RAG](https://github.com/spv-asina/RAG-theory-graphs) | RAG over graph theory textbook -- TF-IDF retrieval, quiz generation, optional LLM enhancement | Python, Flask, scikit-learn, llama.cpp, Qwen |
-| [TSP](https://github.com/spv-asina/TSP) | OCR/RAG document processing system -- team course project on software development technologies | Python, FastAPI, Flask, PostgreSQL, FAISS, Docker |
+| RAG | RAG over graph theory textbook -- TF-IDF retrieval, quiz generation, optional LLM enhancement | Python, Flask, scikit-learn, llama.cpp, Qwen |
+| TSP | OCR/RAG document processing system -- team course project on software development technologies | Python, FastAPI, Flask, PostgreSQL, FAISS, Docker |
 
 ---
 
