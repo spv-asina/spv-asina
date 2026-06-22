@@ -24,7 +24,12 @@ Interested in production ML, MLOps, and LLM applications.
 
 ### Work
 
-MFE, MGD, PLA, ME -- TBD
+| Project | Description | Stack |
+|---------|-------------|-------|
+| MFE | TBD | TBD |
+| MGD | TBD | TBD |
+| PLA | TBD | TBD |
+| ME | TBD | TBD |
 
 ### University
 
