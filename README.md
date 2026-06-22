@@ -30,8 +30,8 @@ TBD
 
 | Project | Description | Stack |
 |---------|-------------|-------|
-| [RAG](https://github.com/spv-asina/RAG-theory-graphs) | RAG pipeline with knowledge graph integration for grounded LLM inference | Python, FastAPI, PostgreSQL, LangChain, FAISS |
-| [TSP](https://github.com/spv-asina/TSP) | Travelling salesman problem -- exact and heuristic algorithm implementations | C++, Python |
+| [RAG](https://github.com/spv-asina/RAG-theory-graphs) | RAG over graph theory textbook -- TF-IDF retrieval, quiz generation, optional LLM enhancement | Python, Flask, scikit-learn, llama.cpp, Qwen |
+| [TSP](https://github.com/spv-asina/TSP) | OCR/RAG document processing system -- team course project on software development technologies | Python, FastAPI, Flask, PostgreSQL, FAISS, Docker |
 
 ---
 
