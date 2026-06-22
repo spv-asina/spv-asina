@@ -24,7 +24,7 @@ Interested in production ML, MLOps, and LLM applications.
 
 ### Work
 
-TBD
+MFE, MGD, PLA, ME -- TBD
 
 ### University
 
