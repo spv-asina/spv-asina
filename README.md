@@ -35,7 +35,7 @@ Interested in production ML, MLOps, and LLM applications.
 
 | Project | Description | Stack |
 |---------|-------------|-------|
-| RAG | RAG over graph theory textbook -- TF-IDF retrieval, quiz generation, optional LLM enhancement | Python, Flask, scikit-learn, llama.cpp, Qwen |
+| RAG | RAG over graph theory textbook -- TF-IDF retrieval, quiz generation, optional LLM enhancement [![CI](https://github.com/spv-asina/RAG/actions/workflows/ci.yml/badge.svg)](https://github.com/spv-asina/RAG/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/license-MIT-green)](https://github.com/spv-asina/RAG/blob/master/LICENSE) | Python, Flask, scikit-learn, llama.cpp, Qwen |
 | TSP | OCR/RAG document processing system -- team course project on software development technologies | Python, FastAPI, Flask, PostgreSQL, FAISS, Docker |
 
 ---
