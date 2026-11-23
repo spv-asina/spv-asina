@@ -1,61 +1,66 @@
 <div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=F7F7F7&background=9333EA&center=true&vCenter=true&random=false&width=500&lines=Hey%2C+I'm+Pavel;ML+Developer+%26+Programmer;Python+%26+C%2B%2B" alt="Typing SVG" />
-  </a>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/va-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/va-light.png">
+    <img src="./assets/va-light.png" alt="ASINA — VA monogram" width="88">
+  </picture>
+  <h1>Pavel Shilov · asina</h1>
+  <p><strong>Software Engineer · AI / ML · Backend</strong></p>
+  <p>Digital products, automation and integrations</p>
+  <p><a href="https://spv-asina.github.io/asina/">Portfolio</a> · <a href="https://t.me/spv_asina">Telegram</a></p>
 </div>
 
-<br>
+## About me
 
-<p align="center">
-  Machine Learning & Backend Developer
-</p>
+I build digital products from the initial problem to working software, and improve existing systems. My focus is applied machine learning, backend engineering, document processing and automation.
 
----
-
-## About Me
-
-ML & Backend developer from SPbPU, Russia.
-Building RAG systems, working with computer vision, writing backend in Python/FastAPI.
-Interested in production ML, MLOps, and LLM applications.
-
----
+Applied Mathematics and Informatics at Peter the Great St. Petersburg Polytechnic University (SPbPU).
 
 ## Projects
 
-### Work
+### Work & portfolio
 
 | Project | Description | Stack |
-|---------|-------------|-------|
-| MFE | Crypto price direction forecasting with technical indicators and ML | Python, Flask, scikit-learn, Binance API, Redis |
-| MGD | YouTube video summarizer -- download, transcribe (Whisper), frame analysis, summary generation | Python, Whisper, RuT5, OpenCV, Gradio |
-| PLA | Event aggregator platform -- Telegram bot with multi-source parsing and LLM enrichment | Python, Aiogram, SQLAlchemy, PostgreSQL, LLM |
-| ME | Construction estimate analyzer -- Telegram bot with price parsing, ML predictions, PDF reports | Python, Aiogram, ML, Parsers, PDF generation |
+| :--- | :--- | :--- |
+| [MFE](https://spv-asina.github.io/asina/case-mfe.html) | Crypto price direction forecasting with technical indicators and ML | Python, Flask, scikit-learn, Binance API, Redis |
+| [MGD](https://spv-asina.github.io/asina/case-mgd.html) | Video transcription, frame analysis and lecture summarization | Python, Whisper, RuT5, OpenCV, Gradio |
+| PLA | Event aggregation platform with multi-source parsing and LLM enrichment | Python, Aiogram, SQLAlchemy, PostgreSQL |
+| [ME](https://spv-asina.github.io/asina/case-me.html) | Construction estimate analysis and PDF reporting | Python, Aiogram, ML, parsing |
+| [SHP](https://spv-asina.github.io/asina/case-shp.html) | Invoice OCR, field validation and accounting integration | Python, FastAPI, OCR, PostgreSQL |
+| [FPL](https://spv-asina.github.io/asina/case-fpl.html) | Logistics CRM for orders, routes, drivers and notifications | Python, PostgreSQL, Telegram API, frontend |
+
+[Explore the full portfolio](https://spv-asina.github.io/asina/cases.html)
 
 ### University
 
 | Project | Description | Stack |
-|---------|-------------|-------|
-| RAG | RAG over graph theory textbook -- TF-IDF retrieval, quiz generation, optional LLM enhancement [![CI](https://github.com/spv-asina/RAG/actions/workflows/ci.yml/badge.svg)](https://github.com/spv-asina/RAG/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/license-MIT-green)](https://github.com/spv-asina/RAG/blob/master/LICENSE) | Python, Flask, scikit-learn, llama.cpp, Qwen |
-| TSP | OCR/RAG document processing system -- team course project on software development technologies | Python, FastAPI, Flask, PostgreSQL, FAISS, Docker |
+| :--- | :--- | :--- |
+| [RAG](https://github.com/spv-asina/RAG) | Graph theory textbook retrieval and quiz generation, with optional LLM enhancement | Python, Flask, scikit-learn, llama.cpp, Qwen |
+| [TSP](https://spv-asina.github.io/asina/case-tsp.html) | Team course project: document processing, OCR and semantic search | Python, FastAPI, Flask, PostgreSQL, FAISS, Docker |
 
----
+RAG: [CI](https://github.com/spv-asina/RAG/actions/workflows/ci.yml) · [MIT license](https://github.com/spv-asina/RAG/blob/master/LICENSE)
 
-## Tech Stack
+## Tech stack
 
-**ML / Data:**
-Python, PyTorch, OpenCV, scikit-learn, FAISS, TensorFlow
+| Area | Technologies |
+| :--- | :--- |
+| Languages | Python, C++ |
+| Machine learning | PyTorch, TensorFlow, scikit-learn |
+| LLM & retrieval | RAG, FAISS, llama.cpp, Qwen |
+| Computer vision & speech | OpenCV, OCR, Whisper |
+| Backend & data | FastAPI, Flask, SQLAlchemy, PostgreSQL, Redis |
+| Automation & infrastructure | Aiogram, Docker, Git |
 
-**Backend:**
-FastAPI, Flask, PostgreSQL, Docker, Git
+## GitHub activity
 
----
-
-## GitHub Stats
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=spv-asina&layout=compact&theme=dark)
-
----
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=spv-asina&amp;layout=compact&amp;hide_border=true&amp;bg_color=00000000&amp;title_color=A78BDA&amp;text_color=F1EFF4">
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=spv-asina&amp;layout=compact&amp;hide_border=true&amp;bg_color=00000000&amp;title_color=51377B&amp;text_color=24212D">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=spv-asina&amp;layout=compact&amp;hide_border=true" alt="Most used languages in public repositories">
+</picture>
 
 ## Contact
 
-[![Telegram](https://img.shields.io/badge/Telegram-9333EA?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/spv_asina)
+For product development, AI / ML, backend engineering and automation:
+
+[Telegram · @spv_asina](https://t.me/spv_asina) · [Portfolio](https://spv-asina.github.io/asina/)
