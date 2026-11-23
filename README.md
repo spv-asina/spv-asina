@@ -18,16 +18,15 @@ Applied Mathematics and Informatics at Peter the Great St. Petersburg Polytechni
 
 ## Projects
 
-### Work & portfolio
+### Top 5 work projects
 
 | Project | Description | Stack |
 | :--- | :--- | :--- |
-| [MFE](https://spv-asina.github.io/asina/case-mfe.html) | Crypto price direction forecasting with technical indicators and ML | Python, Flask, scikit-learn, Binance API, Redis |
-| [MGD](https://spv-asina.github.io/asina/case-mgd.html) | Video transcription, frame analysis and lecture summarization | Python, Whisper, RuT5, OpenCV, Gradio |
-| PLA | Event aggregation platform with multi-source parsing and LLM enrichment | Python, Aiogram, SQLAlchemy, PostgreSQL |
-| [ME](https://spv-asina.github.io/asina/case-me.html) | Construction estimate analysis and PDF reporting | Python, Aiogram, ML, parsing |
-| [SHP](https://spv-asina.github.io/asina/case-shp.html) | Invoice OCR, field validation and accounting integration | Python, FastAPI, OCR, PostgreSQL |
-| [FPL](https://spv-asina.github.io/asina/case-fpl.html) | Logistics CRM for orders, routes, drivers and notifications | Python, PostgreSQL, Telegram API, frontend |
+| [MGD — Video Summarization](https://spv-asina.github.io/asina/case-mgd.html) | Multimodal lecture summarization: speech recognition, slide analysis and summary generation | Python, Whisper, RuT5, OpenCV, Gradio |
+| [SHP — Document OCR](https://spv-asina.github.io/asina/case-shp.html) | Automated processing of goods delivery notes, field validation and accounting integration | Python, FastAPI, OCR, PostgreSQL |
+| [FPL — Logistics CRM](https://spv-asina.github.io/asina/case-fpl.html) | CRM for orders, routes, drivers and Telegram notifications | Python, PostgreSQL, Telegram API, frontend |
+| [MFE — Market Forecasting](https://spv-asina.github.io/asina/case-mfe.html) | ML-based cryptocurrency price direction forecasting, backtesting and prediction verification | Python, Flask, scikit-learn, Binance API, Redis |
+| [ME — Construction Estimates](https://spv-asina.github.io/asina/case-me.html) | Telegram bot for estimate calculation, supplier prices and PDF reporting | Python, Aiogram, ML, parsing |
 
 [Explore the full portfolio](https://spv-asina.github.io/asina/cases.html)
 
