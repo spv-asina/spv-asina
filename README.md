@@ -1,130 +1,79 @@
 <div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-v3/hero-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/profile-v3/hero-light.svg">
-  <img src="./assets/profile-v3/hero-light.svg" alt="ASINA — Pavel Shilov, software engineer in AI/ML, backend and automation" width="100%">
-</picture>
+
+<picture><source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/profile-v4/hero-dark-mobile.svg"><source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="./assets/profile-v4/hero-light-mobile.svg"><source media="(prefers-color-scheme: dark)" srcset="./assets/profile-v4/hero-dark-desktop.svg"><img src="./assets/profile-v4/hero-light-desktop.svg" alt="ASINA — Pavel Shilov, applied AI and software engineering" width="100%"></picture>
+
+<sub><a href="https://spv-asina.github.io/asina/">PORTFOLIO</a> &nbsp; / &nbsp; <a href="https://spv-asina.github.io/asina/cases.html">SELECTED PROJECTS</a> &nbsp; / &nbsp; <a href="https://t.me/spv_asina">CONTACT</a></sub>
+
 </div>
 
-<p align="center">I develop intelligent products, backend systems and automation — from the initial problem to a working application.</p>
+### A little about me
 
-<p align="center"><a href="https://spv-asina.github.io/asina/"><img src="./assets/profile-v3/button-portfolio.svg" height="40" alt="Portfolio"></a> &nbsp; <a href="https://spv-asina.github.io/asina/cases.html"><img src="./assets/profile-v3/button-all-cases.svg" height="40" alt="All cases"></a> &nbsp; <a href="https://t.me/spv_asina"><img src="./assets/profile-v3/button-telegram.svg" height="40" alt="Telegram"></a></p>
+I'm a software engineer working at the intersection of **applied machine learning**, **backend systems** and **product development**. I build tools that solve actual operational problems — from document understanding and forecasting to interfaces, integrations and automation.
 
-## Selected work
+Applied Mathematics & Informatics — Peter the Great St. Petersburg Polytechnic University.
 
-Five representative projects across ML, document processing, product engineering and automation. Each card opens a detailed case study on my website.
+---
 
-<a href="https://spv-asina.github.io/asina/case-mgd.html">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-v3/case-mgd-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/profile-v3/case-mgd-light.svg">
-  <img src="./assets/profile-v3/case-mgd-light.svg" alt="MGD — Lecture summarization" width="100%">
-</picture>
-</a>
+## Selected projects
 
-<a href="https://spv-asina.github.io/asina/case-shp.html">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-v3/case-shp-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/profile-v3/case-shp-light.svg">
-  <img src="./assets/profile-v3/case-shp-light.svg" alt="SHP — Document OCR" width="100%">
-</picture>
-</a>
+Five engineering cases. Each cover opens the project page with the workflow, implementation details and interactive material where available.
 
-<a href="https://spv-asina.github.io/asina/case-fpl.html">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-v3/case-fpl-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/profile-v3/case-fpl-light.svg">
-  <img src="./assets/profile-v3/case-fpl-light.svg" alt="FPL — Logistics CRM" width="100%">
-</picture>
-</a>
+<a href="https://spv-asina.github.io/asina/case-mgd.html"><picture><source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/profile-v4/case-mgd-dark-mobile.svg"><source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="./assets/profile-v4/case-mgd-light-mobile.svg"><source media="(prefers-color-scheme: dark)" srcset="./assets/profile-v4/case-mgd-dark-desktop.svg"><img src="./assets/profile-v4/case-mgd-light-desktop.svg" alt="Case 01: Lecture intelligence" width="100%"></picture></a>
 
-<a href="https://spv-asina.github.io/asina/case-mfe.html">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-v3/case-mfe-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/profile-v3/case-mfe-light.svg">
-  <img src="./assets/profile-v3/case-mfe-light.svg" alt="MFE — Market forecasting" width="100%">
-</picture>
-</a>
 
-<a href="https://spv-asina.github.io/asina/case-me.html">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-v3/case-me-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/profile-v3/case-me-light.svg">
-  <img src="./assets/profile-v3/case-me-light.svg" alt="ME — Construction estimates" width="100%">
-</picture>
-</a>
+<a href="https://spv-asina.github.io/asina/case-shp.html"><picture><source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/profile-v4/case-shp-dark-mobile.svg"><source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="./assets/profile-v4/case-shp-light-mobile.svg"><source media="(prefers-color-scheme: dark)" srcset="./assets/profile-v4/case-shp-dark-desktop.svg"><img src="./assets/profile-v4/case-shp-light-desktop.svg" alt="Case 02: Document processing" width="100%"></picture></a>
 
-<p align="center"><a href="https://spv-asina.github.io/asina/cases.html"><strong>Browse the full portfolio</strong></a></p>
 
-## Open source & university
+<a href="https://spv-asina.github.io/asina/case-fpl.html"><picture><source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/profile-v4/case-fpl-dark-mobile.svg"><source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="./assets/profile-v4/case-fpl-light-mobile.svg"><source media="(prefers-color-scheme: dark)" srcset="./assets/profile-v4/case-fpl-dark-desktop.svg"><img src="./assets/profile-v4/case-fpl-light-desktop.svg" alt="Case 03: Logistics CRM" width="100%"></picture></a>
 
-<a href="https://github.com/spv-asina/RAG">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-v3/case-rag-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/profile-v3/case-rag-light.svg">
-  <img src="./assets/profile-v3/case-rag-light.svg" alt="RAG — graph theory textbook search and adaptive quiz trainer" width="100%">
-</picture>
-</a>
 
-**[RAG — Graph Theory Assistant](https://github.com/spv-asina/RAG)** is an educational search-and-practice application built around a graph theory textbook. It retrieves source-backed answers using **TF-IDF and pymorphy3**, and includes an adaptive quiz trainer for **57 terms** and **five question types**. It works without a language model; **Qwen 2.5 via llama.cpp** is an optional enhancement for question phrasing and distractors. [Source code](https://github.com/spv-asina/RAG) · [CI](https://github.com/spv-asina/RAG/actions/workflows/ci.yml) · [MIT](https://github.com/spv-asina/RAG/blob/master/LICENSE).
+<a href="https://spv-asina.github.io/asina/case-mfe.html"><picture><source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/profile-v4/case-mfe-dark-mobile.svg"><source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="./assets/profile-v4/case-mfe-light-mobile.svg"><source media="(prefers-color-scheme: dark)" srcset="./assets/profile-v4/case-mfe-dark-desktop.svg"><img src="./assets/profile-v4/case-mfe-light-desktop.svg" alt="Case 04: Market forecasting" width="100%"></picture></a>
 
-**[TSP — Document Search](https://spv-asina.github.io/asina/case-tsp.html)** — university team project: OCR, text processing, semantic retrieval and an API layer with Python, FastAPI, PostgreSQL and FAISS.
 
-## Engineering toolkit
+<a href="https://spv-asina.github.io/asina/case-me.html"><picture><source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/profile-v4/case-me-dark-mobile.svg"><source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="./assets/profile-v4/case-me-light-mobile.svg"><source media="(prefers-color-scheme: dark)" srcset="./assets/profile-v4/case-me-dark-desktop.svg"><img src="./assets/profile-v4/case-me-light-desktop.svg" alt="Case 05: Construction estimates" width="100%"></picture></a>
 
-**Languages & web**
 
-<p><img src="./assets/profile-v3/badges/python.svg" alt="Python" height="36">
-<img src="./assets/profile-v3/badges/cplusplus.svg" alt="C++" height="36">
-<img src="./assets/profile-v3/badges/javascript.svg" alt="JavaScript" height="36">
-<img src="./assets/profile-v3/badges/typescript.svg" alt="TypeScript" height="36">
-<img src="./assets/profile-v3/badges/html5.svg" alt="HTML5" height="36">
-<img src="./assets/profile-v3/badges/css3.svg" alt="CSS3" height="36">
-<img src="./assets/profile-v3/badges/rust.svg" alt="Rust" height="36">
-<img src="./assets/profile-v3/badges/go.svg" alt="Go" height="36"></p>
 
-**Machine learning & computer vision**
+<p align="right"><a href="https://spv-asina.github.io/asina/cases.html"><b>Explore the complete portfolio ↗</b></a></p>
 
-<p><img src="./assets/profile-v3/badges/pytorch.svg" alt="PyTorch" height="36">
-<img src="./assets/profile-v3/badges/tensorflow.svg" alt="TensorFlow" height="36">
-<img src="./assets/profile-v3/badges/scikitlearn.svg" alt="scikit-learn" height="36">
-<img src="./assets/profile-v3/badges/opencv.svg" alt="OpenCV" height="36">
-<img src="./assets/profile-v3/badges/numpy.svg" alt="NumPy" height="36">
-<img src="./assets/profile-v3/badges/pandas.svg" alt="pandas" height="36"></p>
+---
 
-CatBoost · XGBoost · LightGBM · feature engineering · model evaluation
+## Open source & learning
 
-**LLMs, speech & document intelligence**
+<a href="https://github.com/spv-asina/RAG"><picture><source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/profile-v4/case-rag-dark-mobile.svg"><source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="./assets/profile-v4/case-rag-light-mobile.svg"><source media="(prefers-color-scheme: dark)" srcset="./assets/profile-v4/case-rag-dark-desktop.svg"><img src="./assets/profile-v4/case-rag-light-desktop.svg" alt="RAG educational search and graph theory quiz trainer" width="100%"></picture></a>
 
-RAG · TF-IDF · FAISS · Qwen · llama.cpp · Whisper · RuT5 · OCR · LayoutLMv3 · Hugging Face · GigaChat · embeddings
+**[RAG — Graph Theory Assistant](https://github.com/spv-asina/RAG)** · Full-stack educational retrieval application. **TF-IDF and pymorphy3** search through graph theory textbook material; a quiz trainer tracks progress across **57 terms** and **five question types**. It works without an LLM; **Qwen 2.5 7B** via llama.cpp can optionally refine language and distractors. [Source code](https://github.com/spv-asina/RAG) · [CI](https://github.com/spv-asina/RAG/actions/workflows/ci.yml) · [MIT](https://github.com/spv-asina/RAG/blob/master/LICENSE).
 
-**Backend, APIs & databases**
+**[TSP — Document Processing & Semantic Search](https://spv-asina.github.io/asina/case-tsp.html)** · OCR, structured document extraction, FAISS retrieval and a backend API; university team course project.
 
-<p><img src="./assets/profile-v3/badges/fastapi.svg" alt="FastAPI" height="36">
-<img src="./assets/profile-v3/badges/flask.svg" alt="Flask" height="36">
-<img src="./assets/profile-v3/badges/postgresql.svg" alt="PostgreSQL" height="36">
-<img src="./assets/profile-v3/badges/redis.svg" alt="Redis" height="36">
-<img src="./assets/profile-v3/badges/mongodb.svg" alt="MongoDB" height="36">
-<img src="./assets/profile-v3/badges/nginx.svg" alt="Nginx" height="36"></p>
+---
 
-SQLAlchemy · ClickHouse · REST APIs · webhooks · API integration · ETL
+## Technical practice
 
-**Infrastructure, automation & quality**
+**01 / AI & machine learning**  
+Python · PyTorch · TensorFlow · scikit-learn · CatBoost · XGBoost · LightGBM · pandas · NumPy · model evaluation · feature engineering
 
-<p><img src="./assets/profile-v3/badges/docker.svg" alt="Docker" height="36">
-<img src="./assets/profile-v3/badges/kubernetes.svg" alt="Kubernetes" height="36">
-<img src="./assets/profile-v3/badges/git.svg" alt="Git" height="36">
-<img src="./assets/profile-v3/badges/linux.svg" alt="Linux" height="36">
-<img src="./assets/profile-v3/badges/pytest.svg" alt="pytest" height="36"></p>
+**02 / LLMs & retrieval**  
+RAG · Qwen · llama.cpp · FAISS · embeddings · vector search · TF-IDF · Hugging Face · prompt engineering · GigaChat
 
-GitHub Actions · CI/CD · Aiogram · Telegram Bot API · message queues · data pipelines · monitoring
+**03 / Vision, speech & OCR**  
+OpenCV · Whisper · RuT5 · OCR pipelines · document layouts · LayoutLMv3 · multimodal data processing
 
-<sub>Experience varies by technology and project; the stack includes professional work, independent projects and coursework. Technology logos by <a href="https://github.com/devicons/devicon">Devicon</a>.</sub>
+**04 / Backend & data**  
+FastAPI · Flask · Python · SQLAlchemy · PostgreSQL · Redis · MongoDB · ClickHouse · REST APIs · webhooks · JSON · SQL · ETL
 
-## Contact
+**05 / Frontend & languages**  
+JavaScript · TypeScript · HTML · CSS · C++ · Bash · React · Vue · Rust · Go · Swift · Scala
 
-Available to discuss AI/ML, backend engineering, automation and full product development.
+**06 / Automation & delivery**  
+Docker · Kubernetes · Git · GitHub Actions · Linux · CI/CD · pytest · Nginx · Aiogram · Telegram Bot API · Kafka · monitoring
 
-<p align="center"><a href="https://spv-asina.github.io/asina/"><img src="./assets/profile-v3/button-portfolio.svg" height="40" alt="Portfolio"></a> &nbsp; <a href="https://spv-asina.github.io/asina/cases.html"><img src="./assets/profile-v3/button-all-cases.svg" height="40" alt="All cases"></a> &nbsp; <a href="https://t.me/spv_asina"><img src="./assets/profile-v3/button-telegram.svg" height="40" alt="Telegram"></a></p>
+<sub>Tools span practical projects, independent development and university work; depth of experience varies.</sub>
 
-<sub>Visual identity: the approved VA monogram, Comfortaa-inspired typography and the Obsidian / Amethyst palette.</sub>
+---
+
+## Collaboration
+
+I work with new product ideas, difficult technical integrations, ML/AI features and automation of manual processes.
+
+**[Discuss a project on Telegram](https://t.me/spv_asina)** · **[Explore my work](https://spv-asina.github.io/asina/)**

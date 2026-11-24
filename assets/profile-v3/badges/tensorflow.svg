@@ -1,3 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="145" height="41" viewBox="0 0 145 41"><rect x="0.5" y="0.5" width="144" height="40" rx="11" fill="#171820" stroke="#403649"/><rect x="7" y="6" width="31" height="29" rx="6" fill="#F1EFF4"/><svg xmlns="http://www.w3.org/2000/svg" x="10" y="8" width="25" height="25" viewBox="0 0 128 128">
-  <path d="m61.55 128-21.84-12.68V40.55L6.81 59.56l.08-28.32L61.55 0zM66.46 0v128l21.84-12.68V79.31l16.49 9.53-.1-24.63-16.39-9.36v-14.3l32.89 19.01-.08-28.32z" fill="#ff6f00" />
-</svg><text x="44" y="26" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="550" fill="#F1EFF4">TensorFlow</text></svg>
