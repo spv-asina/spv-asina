@@ -46,7 +46,12 @@ jobs:
             // The screenshot must contain the initialized live product demo, never the placeholder.
             await page.waitForFunction(()=>{const el=document.querySelector('[data-demo-root]');return !!el && !/Подготавливаем демонстрацию продукта/.test(el.innerText) && el.innerText.trim().length>120;},{timeout:30000});
             await root.scrollIntoViewIfNeeded();
-            await page.waitForTimeout(850);
+            await page.waitForTimeout(250);
+            const actions={mgd:'Собрать конспект',shp:'Извлечь и проверить',fpl:'Создать заказ',mfe:'Пересчитать прогноз',me:'Рассчитать смету'};
+            const btn=root.getByRole('button',{name:actions[code],exact:true});
+            await btn.waitFor({state:'visible',timeout:10000});
+            await btn.click();
+            await page.waitForTimeout(700);
             const text=(await root.innerText()).trim();
             if(text.length<120) throw new Error(code+' '+device+' demo still not rendered: '+text.slice(0,150));
             await root.screenshot({path:'assets/real-demo-shots/'+code+'-'+device+'.png',animations:'disabled',timeout:30000});
