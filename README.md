@@ -9,11 +9,9 @@
 <a href="https://spv-asina.github.io/asina/"><strong>Portfolio</strong></a> &nbsp;&nbsp;·&nbsp;&nbsp; <a href="https://spv-asina.github.io/asina/cases.html">All work</a> &nbsp;&nbsp;·&nbsp;&nbsp; <a href="https://t.me/spv_asina">Telegram</a>
 </div>
 
-## Selected engineering work
+## Selected projects
 
-I build and improve software products — ML features, backend systems and automation tools. Below are five representative cases with **screenshots captured from running interactive browser demonstrations**.
-
-<sub>The captures use synthetic or sample inputs. The public demos are simplified illustrations of the workflows, **not screenshots of private production systems or proof that production ML models are running in-browser**.</sub>
+Five working browser demos across **AI / ML, backend and automation**. Select a screenshot to open the case.
 
 ### 01 / [Lecture summarization](https://spv-asina.github.io/asina/case-mgd.html)
 
@@ -89,6 +87,8 @@ Cost calculation, supplier pricing and estimate reporting through an operational
 </a>
 
 <sub>Python · Aiogram · ML · PDF · [Open the case and interactive demo](https://spv-asina.github.io/asina/case-me.html)</sub>
+
+<sub>The screenshots show simplified interactive demonstrations using sample or synthetic inputs, not private production interfaces or actual production model execution.</sub>
 
 <p align="center"><a href="https://spv-asina.github.io/asina/cases.html"><strong>Browse the complete project portfolio</strong></a></p>
 
