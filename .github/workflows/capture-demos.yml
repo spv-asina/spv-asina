@@ -160,9 +160,32 @@ jobs:
               crop.save(dest,optimize=True)
               print(code,'crop',w,h,'->',crop.size)
           PY
+      - name: Review GitHub-rendered README at mobile width
+        run: |
+          cat >/tmp/readme-capture/review.cjs <<'JS'
+          const fs=require('fs');
+          const {chromium}=require('/tmp/readme-capture/node_modules/playwright');
+          (async()=>{
+             const exe=['/usr/bin/google-chrome','/usr/bin/google-chrome-stable','/usr/bin/chromium'].find(p=>fs.existsSync(p));
+             const browser=await chromium.launch({headless:true,executablePath:exe,args:['--no-sandbox']});
+             const page=await browser.newPage({viewport:{width:390,height:844},deviceScaleFactor:1,colorScheme:'dark'});
+             const url='https://github.com/spv-asina/spv-asina/blob/design/asina-profile-readme/README.md';
+             const response=await page.goto(url,{waitUntil:'domcontentloaded',timeout:45000});
+             if(!response||response.status()>=400)throw new Error('GitHub preview failed HTTP '+(response&&response.status()));
+             await page.locator('article.markdown-body').first().waitFor({state:'visible',timeout:20000});
+             await page.screenshot({path:'assets/real-demo-shots/review-readme-top.png',animations:'disabled'});
+             const heading=page.getByRole('heading',{name:'Selected engineering work'});
+             await heading.scrollIntoViewIfNeeded();
+             await page.waitForTimeout(300);
+             await page.screenshot({path:'assets/real-demo-shots/review-readme-cases.png',animations:'disabled'});
+             console.log('Rendered Github page screenshot OK:',url);
+             await browser.close();
+          })().catch(e=>{console.error(e);process.exit(1)});
+          JS
+          node /tmp/readme-capture/review.cjs
       - name: Commit captures only if all 10 real screenshots are available
         run: |
-          test "$(find assets/real-demo-shots -maxdepth 1 -name '*.png' | wc -l)" -eq 19
+          test "$(find assets/real-demo-shots -maxdepth 1 -name '*.png' | wc -l)" -eq 21
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add assets/real-demo-shots
