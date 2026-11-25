@@ -151,7 +151,7 @@ jobs:
           from PIL import Image
           from pathlib import Path
           base=Path('assets/real-demo-shots')
-          start={'mgd':.639,'shp':.585,'fpl':.551,'mfe':.640,'me':.666}
+          start={'mgd':.600,'shp':.585,'fpl':.551,'mfe':.640,'me':.666}
           for code,ratio in start.items():
               source=Image.open(base/f'{code}-mobile.png').convert('RGB')
               w,h=source.size
@@ -174,9 +174,10 @@ jobs:
              if(!response||response.status()>=400)throw new Error('GitHub preview failed HTTP '+(response&&response.status()));
              await page.locator('article.markdown-body').first().waitFor({state:'visible',timeout:20000});
              await page.screenshot({path:'assets/real-demo-shots/review-readme-top.png',animations:'disabled'});
-             const heading=page.getByRole('heading',{name:'Selected engineering work'});
-             await heading.scrollIntoViewIfNeeded();
-             await page.waitForTimeout(300);
+             const firstCase=page.locator('article.markdown-body img[alt*="Live browser demo"]').first();
+             await firstCase.waitFor({state:'visible',timeout:15000});
+             await firstCase.scrollIntoViewIfNeeded();
+             await page.waitForTimeout(400);
              await page.screenshot({path:'assets/real-demo-shots/review-readme-cases.png',animations:'disabled'});
              console.log('Rendered Github page screenshot OK:',url);
              await browser.close();
