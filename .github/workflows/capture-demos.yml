@@ -27,7 +27,7 @@ jobs:
           cd /tmp/readme-capture
           npm init -y >/dev/null
           npm install --no-audit --no-fund --silent playwright@1.57.0
-          npx playwright install --with-deps chromium
+          command -v google-chrome || command -v google-chrome-stable || command -v chromium
       - name: Capture live case demo UIs
         env:
           SITE_ORIGIN: https://spv-asina.github.io/asina
@@ -54,7 +54,7 @@ jobs:
             console.log(code,device,'chars=',text.length,'screenshot OK; source:',url);
           }
           (async()=>{
-            const browser=await chromium.launch({headless:true});
+            const fsSys=require('fs');const exe=['/usr/bin/google-chrome','/usr/bin/google-chrome-stable','/usr/bin/chromium'].find(p=>fsSys.existsSync(p)); if(!exe) throw new Error('No system Chrome found on runner'); const browser=await chromium.launch({headless:true,executablePath:exe,args:['--no-sandbox']});
             for(const code of codes){
               for(const device of ['desktop','mobile']){
                 const page=await browser.newPage({viewport:device==='mobile'?{width:390,height:844}:{width:1400,height:970},deviceScaleFactor:1,locale:'ru-RU',colorScheme:'light'});
