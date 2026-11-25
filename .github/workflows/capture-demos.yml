@@ -147,9 +147,22 @@ jobs:
               for device in ('desktop','mobile'):draw_header(mode,device)
           PY
           python3 /tmp/readme-capture/header.py
+          python3 - <<'PY'
+          from PIL import Image
+          from pathlib import Path
+          base=Path('assets/real-demo-shots')
+          start={'mgd':.639,'shp':.585,'fpl':.551,'mfe':.640,'me':.666}
+          for code,ratio in start.items():
+              source=Image.open(base/f'{code}-mobile.png').convert('RGB')
+              w,h=source.size
+              crop=source.crop((0,int(h*ratio),w,h-12))
+              dest=base/f'{code}-mobile-focus.png'
+              crop.save(dest,optimize=True)
+              print(code,'crop',w,h,'->',crop.size)
+          PY
       - name: Commit captures only if all 10 real screenshots are available
         run: |
-          test "$(find assets/real-demo-shots -maxdepth 1 -name '*.png' | wc -l)" -eq 14
+          test "$(find assets/real-demo-shots -maxdepth 1 -name '*.png' | wc -l)" -eq 19
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add assets/real-demo-shots
