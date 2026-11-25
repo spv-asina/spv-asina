@@ -71,9 +71,85 @@ jobs:
           })().catch(e=>{console.error(e);process.exit(1)});
           JS
           node /tmp/readme-capture/capture.cjs
+      - name: Create editorial headers from captured real UI (no mock data)
+        run: |
+          python3 -m pip install --quiet --user pillow
+          cat >/tmp/readme-capture/header.py <<'PY'
+          from PIL import Image,ImageDraw,ImageFont,ImageFilter
+          from pathlib import Path
+          import random
+          root=Path('assets/real-demo-shots')
+          def face(size,bold=False):
+              paths=[
+                '/usr/share/fonts/truetype/comfortaa/Comfortaa-Bold.ttf' if bold else '/usr/share/fonts/truetype/comfortaa/Comfortaa-Regular.ttf',
+                '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf' if bold else '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',
+              ]
+              for fn in paths:
+                  try:return ImageFont.truetype(fn,size)
+                  except OSError:pass
+              return ImageFont.load_default()
+          def logo_img(mode,size):
+              original=Image.open('assets/va-dark.png' if mode=='dark' else 'assets/va-light.png').convert('RGBA')
+              bbox=original.getchannel('A').getbbox()
+              original=original.crop(bbox)
+              original.thumbnail(size,Image.Resampling.LANCZOS)
+              return original
+          def rounded_card(original,sz,radius=17):
+              orig=original.convert('RGB')
+              w,h=sz
+              # Crop UI deliberately without altering the content or values.
+              ratio=w/h
+              if orig.width/orig.height>ratio:
+                  target=int(orig.height*ratio)
+                  orig=orig.crop((orig.width-target,0,orig.width,orig.height))
+              else:
+                  target=int(orig.width/ratio)
+                  orig=orig.crop((orig.width-target)//2,0,(orig.width+target)//2,target)
+              orig=orig.resize(sz,Image.Resampling.LANCZOS)
+              mask=Image.new('L',sz,0)
+              ImageDraw.Draw(mask).rounded_rectangle((0,0,w-1,h-1),radius=radius,fill=255)
+              return orig,mask
+          def draw_header(mode,device):
+              mobile=device=='mobile'
+              W,H=(760,278) if mobile else (1280,300)
+              bg=(12,13,19) if mode=='dark' else (249,248,250)
+              fg=(242,239,244) if mode=='dark' else (24,23,28)
+              secondary=(181,166,197) if mode=='dark' else (95,76,113)
+              accent=(167,139,218) if mode=='dark' else (81,55,123)
+              im=Image.new('RGB',(W,H),bg);d=ImageDraw.Draw(im)
+              random.seed(381)
+              for i in range(4500 if mobile else 7800):
+                  x=random.randrange(W);y=random.randrange(H)
+                  dc=random.choice([-4,-3,-2,-1,1,2,3,4])
+                  d.point((x,y),fill=tuple(max(0,min(255,v+dc)) for v in bg))
+              if mobile:
+                  va=logo_img(mode,(100,90));im.paste(va,(53,39),va)
+                  d.text((170,29),'asina',font=face(74,True),fill=fg)
+                  d.line((55,128,701,128),fill=(59,52,65) if mode=='dark' else (212,203,220),width=1)
+                  d.text((54,154),'Pavel Shilov',font=face(40,True),fill=fg)
+                  d.text((55,224),'APPLIED AI  /  SOFTWARE ENGINEERING',font=face(17,False),fill=accent)
+              else:
+                  va=logo_img(mode,(100,83));im.paste(va,(49,57),va)
+                  d.text((169,45),'asina',font=face(86,True),fill=fg)
+                  d.text((58,177),'Pavel Shilov',font=face(36,True),fill=fg)
+                  d.text((61,239),'APPLIED AI  /  BACKEND  /  AUTOMATION',font=face(18,False),fill=accent)
+                  # Cropped screenshots of browser sandboxes: not fabricated UI or results.
+                  a=Image.open(root/'shp-desktop.png')
+                  b=Image.open(root/'mgd-desktop.png')
+                  for pic,loc,sz in [(a,(700,52),(272,185)),(b,(915,80),(293,175))]:
+                      panel,mask=rounded_card(pic,sz,14)
+                      im.paste(panel,loc,mask)
+                      d.rounded_rectangle((loc[0],loc[1],loc[0]+sz[0]-1,loc[1]+sz[1]-1),radius=14,outline=(93,81,104) if mode=='dark' else (191,175,204),width=2)
+              path=root/('hero-'+mode+'-'+device+'.png')
+              im.save(path,optimize=True)
+              print('Banner composed from official VA and cropped real demo screenshots:',path)
+          for mode in ('dark','light'):
+              for device in ('desktop','mobile'):draw_header(mode,device)
+          PY
+          python3 /tmp/readme-capture/header.py
       - name: Commit captures only if all 10 real screenshots are available
         run: |
-          test "$(find assets/real-demo-shots -maxdepth 1 -name '*.png' | wc -l)" -eq 10
+          test "$(find assets/real-demo-shots -maxdepth 1 -name '*.png' | wc -l)" -eq 14
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add assets/real-demo-shots
