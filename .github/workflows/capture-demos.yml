@@ -1,0 +1,76 @@
+name: Capture actual portfolio demos (temporary)
+
+on:
+  push:
+    branches: [design/asina-profile-readme]
+    paths:
+      - '.github/workflows/capture-demos.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  screenshots:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: design/asina-profile-readme
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser automation
+        run: |
+          mkdir -p /tmp/readme-capture
+          cd /tmp/readme-capture
+          npm init -y >/dev/null
+          npm install --no-audit --no-fund --silent playwright@1.57.0
+          npx playwright install --with-deps chromium
+      - name: Capture live case demo UIs
+        env:
+          SITE_ORIGIN: https://spv-asina.github.io/asina
+        run: |
+          mkdir -p assets/real-demo-shots
+          cat >/tmp/readme-capture/capture.cjs <<'JS'
+          const fs=require('fs');
+          const { chromium }=require('/tmp/readme-capture/node_modules/playwright');
+          const codes=['mgd','shp','fpl','mfe','me'];
+          async function snapshot(page,code,device){
+            const url=process.env.SITE_ORIGIN+'/case-'+code+'.html';
+            const response=await page.goto(url,{waitUntil:'domcontentloaded',timeout:45000});
+            if(!response||response.status()>=400) throw new Error(code+' '+device+' HTTP '+(response&&response.status()));
+            const root=page.locator('[data-demo-root]');
+            await root.waitFor({state:'visible',timeout:30000});
+            // The screenshot must contain the initialized live product demo, never the placeholder.
+            await page.waitForFunction(()=>{const el=document.querySelector('[data-demo-root]');return !!el && !/Подготавливаем демонстрацию продукта/.test(el.innerText) && el.innerText.trim().length>120;},{timeout:30000});
+            await root.scrollIntoViewIfNeeded();
+            await page.waitForTimeout(850);
+            const text=(await root.innerText()).trim();
+            if(text.length<120) throw new Error(code+' '+device+' demo still not rendered: '+text.slice(0,150));
+            await root.screenshot({path:'assets/real-demo-shots/'+code+'-'+device+'.png',animations:'disabled',timeout:30000});
+            fs.writeFileSync('assets/real-demo-shots/'+code+'-'+device+'.txt',text.slice(0,5000));
+            console.log(code,device,'chars=',text.length,'screenshot OK; source:',url);
+          }
+          (async()=>{
+            const browser=await chromium.launch({headless:true});
+            for(const code of codes){
+              for(const device of ['desktop','mobile']){
+                const page=await browser.newPage({viewport:device==='mobile'?{width:390,height:844}:{width:1400,height:970},deviceScaleFactor:1,locale:'ru-RU',colorScheme:'light'});
+                try{ await snapshot(page,code,device); }
+                finally{await page.close();}
+              }
+            }
+            await browser.close();
+          })().catch(e=>{console.error(e);process.exit(1)});
+          JS
+          node /tmp/readme-capture/capture.cjs
+      - name: Commit captures only if all 10 real screenshots are available
+        run: |
+          test "$(find assets/real-demo-shots -maxdepth 1 -name '*.png' | wc -l)" -eq 10
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/real-demo-shots
+          git commit -m '[screenshots] Capture real portfolio demo UIs for README'
+          git push origin HEAD:design/asina-profile-readme
